@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.darts.Main2">
+    <!---<EditText
+        android:id="@+id/contact"
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:hint="Contact"
+            android:layout_below="@id/btnDelete"
+        android:inputType="number"
+        android:textSize="24dp" /> -->
+
+ <LinearLayout
+     android:id = "@+id/layoutt"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:weightSum="9"
+     android:padding="10dp">
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="2"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="Név"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="Pont"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="15"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="16"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="17"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="18"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="19"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="20"
+      android:layout_height="wrap_content"
+      />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="0.7"
+      android:textSize="15sp"
+      android:textStyle="bold|italic"
+      android:text="25"
+      android:layout_height="wrap_content"
+      />
+ </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutt">
+    </ListView>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Update"
+        android:layout_marginTop="500dp"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Delete"
+        android:layout_marginTop="500dp"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="View"
+        android:layout_gravity="right"
+        android:layout_marginTop="500dp"
+        android:textSize="10sp" />
+
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:onClick="CountClick1"
+    android:layout_marginTop="160dp"
+    android:text="15" />
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button1"
+    android:layout_alignBottom="@+id/button1"
+    android:layout_toRightOf="@+id/button1"
+    android:onClick="CountClick2"
+    android:text="16" />
+
+<Button
+    android:id="@+id/button3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button2"
+    android:layout_alignBottom="@+id/button2"
+    android:layout_toRightOf="@+id/button2"
+    android:onClick="CountClick3"
+    android:text="17" />
+<Button
+    android:id="@+id/button4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button3"
+    android:layout_alignBottom="@+id/button3"
+    android:layout_toRightOf="@+id/button3"
+    android:onClick="CountClick4"
+    android:text="18" />
+<Button
+    android:id="@+id/button5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="210dp"
+    android:onClick="CountClick5"
+    android:text="19" />
+<Button
+    android:id="@+id/button6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button5"
+    android:layout_alignBottom="@+id/button5"
+    android:layout_toRightOf="@+id/button5"
+    android:onClick="CountClick6"
+    android:text="20" />
+
+<Button
+    android:id="@+id/button7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button6"
+    android:layout_alignBottom="@+id/button6"
+    android:layout_toRightOf="@+id/button6"
+    android:onClick="CountClick7"
+    android:text="25" />
+<Button
+    android:id="@+id/button8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button7"
+    android:layout_alignBottom="@+id/button7"
+    android:layout_toRightOf="@+id/button7"
+    android:onClick="onClick2"
+    android:text="reset" />
+    <Button
+        android:id="@+id/undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_toRightOf="@+id/button8"
+        android:onClick="onClick3"
+        android:text="Undo"/>
+ <Button
+     android:id="@+id/save"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/button8"
+     android:layout_alignBottom="@+id/button8"
+     android:layout_toRightOf="@+id/button8"
+     android:layout_marginLeft="130dp"
+     android:text="SAVE" />
+ <TextView
+     android:id="@+id/textName"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/button4"
+     android:layout_alignBottom="@+id/button4"
+     android:layout_toRightOf="@+id/button4"
+     android:layout_marginLeft="135dp"
+     android:textStyle="bold"
+     android:textSize="30dp"
+     android:text="A1" />
+
+
+</RelativeLayout>
